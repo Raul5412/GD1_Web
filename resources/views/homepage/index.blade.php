@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio</title>
-</head>
-<body>
-    <h1>Laboratorio</h1>
+@extends('layouts.main')
+
+@section('content')
+    <h1>Super Banco</h1>
+    @auth
     <p>
-        {{ $account->name }}
+        {{ auth()->user()->email }}
+        <a href="{{ route('auth.logout') }}" class="btn btn-primary">
+            Cerrar sesión
+        </a>
     </p>
-</body>
-</html>
+    @endauth
+    <p>
+        <a href="{{ route('auth.register')}}" class="btn btn-primary">
+            Registrate aquí
+        </a>
+
+    </p>
+@endsection
