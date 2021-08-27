@@ -18,7 +18,12 @@
         <a href="{{ route('accounts.account')}}" class="btn btn-primary">
             Crear cuenta 
         </a>
-
     </p>
+    <p>
+        <a href="{{ route('movement.movement')}}" class="btn btn-primary">
+            Ver cuentas
+        </a>
+    </p>
+    @yield('table')
     @endauth
 @endsection

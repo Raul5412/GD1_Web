@@ -21,5 +21,6 @@ Route::post('/register', 'AuthController@saveUser')->name('auth.save-user');
 Route::get('/logout', 'AuthController@logout')->name('auth.logout');
 
 Route::get('/account', 'HomepageController@account')->name('accounts.account');
-
 Route::post('/account', 'HomepageController@saveAccount')->name('accounts.save-account');
+
+Route::get('/move', 'HomepageController@move')->name('movement.movement');
