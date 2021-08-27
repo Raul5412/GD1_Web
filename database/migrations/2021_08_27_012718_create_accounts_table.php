@@ -16,6 +16,8 @@ class CreateAccountsTable extends Migration
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->decimal('account_amount', $precision = 8, $scale = 2);
+            $table->foreignId('user_id');
             $table->timestamps();
         });
     }
