@@ -20,10 +20,21 @@
         </a>
     </p>
     <p>
-        <a href="{{ route('movement.movement')}}" class="btn btn-primary">
-            Ver cuentas
+        <a href="{{ route('move.move2')}}" class="btn btn-primary">
+            Hacer movimientos
         </a>
     </p>
+
+    @yield('move_cuenta')
+    @yield('move2_cuenta')
+    
+    <p>
+        <a href="{{ route('movement.movement')}}" class="btn btn-primary">
+            Ver movimientos
+        </a>
+    </p>
+
     @yield('table')
+
     @endauth
 @endsection

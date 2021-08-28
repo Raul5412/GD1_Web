@@ -55,8 +55,6 @@ class AuthController extends Controller
 
         return redirect()->route('homepage');
 
-        //return response()->json($user);
-        // return view('app.views-folder.name');
     }
 
 }

@@ -24,3 +24,7 @@ Route::get('/account', 'HomepageController@account')->name('accounts.account');
 Route::post('/account', 'HomepageController@saveAccount')->name('accounts.save-account');
 
 Route::get('/move', 'HomepageController@move')->name('movement.movement');
+
+Route::get('/movimientos', 'HomepageController@moves')->name('move.move2');
+
+Route::get('/movimiento-cuenta', 'HomepageController@moves3')->name('move.move3');
